@@ -1,8 +1,8 @@
+import { Grid } from "@mui/material";
 import { FC } from "react";
 import "./App.css";
 import Layout from "./components/Layout";
 import mockPosts from "./posts.json";
-import { Grid } from "@mui/material";
 
 const App: FC = () => {
   return (
