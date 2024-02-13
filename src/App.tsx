@@ -7,7 +7,7 @@ import mockPosts from "./posts.json";
 const App: FC = () => {
   const apiroot = import.meta.env.VITE_API_ROOT;
   console.log("🚀 ~ apiroot:", apiroot);
-  fetch(new URL(`${import.meta.env.VITE_API_ROOT}/api/v1/feature-requests`))
+  fetch(new URL(`${import.meta.env.VITE_API_ROOT}/api/v1/feature-request`))
     .then((res) => res.json())
     .then((data) => console.log(data));
   return (
