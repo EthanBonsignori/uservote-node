@@ -1,0 +1,30 @@
+name: Lint, Build, and Test
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint-build-test:
+    name: Lint, Build, and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: "npm"
+      - run: npm ci
+      - run: npm run lint
+      # todo: setup test
+      # - run: npm run test
+      - run: npm run build
