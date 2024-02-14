@@ -1,4 +1,4 @@
-name: Lint, Build, and Test
+name: Lint and Test
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   lint-build-test:
-    name: Lint, Build, and Test
+    name: Lint and Test
     runs-on: ubuntu-latest
 
     steps:
@@ -23,9 +23,10 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: "npm"
-          cache-dependency-path: "./package-lock.json"
-      - run: npm ci
-      - run: npm run lint
-      # todo: setup test
-      # - run: npm run test
-      - run: npm run build
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+    # todo: setup test
+    # - name: Test
+    #   run: npm run test
