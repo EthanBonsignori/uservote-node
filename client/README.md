@@ -4,29 +4,22 @@
 
 UserVote is an application that allows users to vote on a list of features they'd like to see added to a product or service. The application is designed to be used by a company to gather feedback from their customers and allow them to vote on what matters most to them using a simple upvote button. UserVote is a "wide but shallow" project to demonstrate a variety of technologies and best practices. The client is built with TypeScript, React, React-Query, and Material UI.
 
-## Planned Features
+## Requirements
 
-- [ ] Add Feature Request
-- [ ] Delete feature request from list
-- [ ] Upvote feature request
-- [ ] Sort items by vote count
-- [ ] User authentication
-- [ ] User roles and permissions
-- [ ] Per company/service profile
+Node.js 21+, recommended to use [nvm](https://github.com/nvm-sh/nvm) which will automatically use the .nvmrc file to set the correct version of Node.js.
 
 ## Installation
 
-1. Clone the repository
-1. Run `npm install` to install the dependencies
-1. Run `npm start` to start the development server
+See [Installation in the root README.md](/README.md#installation)
 
-## Usage
+## Updating the API Types
 
-1. Navigate to the deployed application
-1. TODO: Click on the upvote buttons to vote on an item
-1. TODO: Click on the "Request Feature" button to add a new Feature Request
-1. TODO: Click on a Feature Request and then add a comment
+1. Start the server, see [server/README.md](/server/README.md)
+1. Navigate to the server docs url in your browser, i.e. `http://localhost:8000/docs`
+1. Click the `/openapi.json` link at the top of the page
+1. Save the file to `client/src/api/openapi.json`, replacing the existing file
+1. From the client root, run `npm run api:generate` to generate the TypeScript types and api methods
 
-## Contributing
+## Planned Features
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+See [Planned Features in the root README.md](/README.md#planned-features)

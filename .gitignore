@@ -25,4 +25,3 @@ poetry.lock
 cloudbuild.yaml
 docker-compose.yaml
 Makefile
-start.sh

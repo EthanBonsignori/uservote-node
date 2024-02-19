@@ -10,16 +10,8 @@ Python 3.8+
 
 ## Installation
 
-```bash
-pip install -r requirements.txt
-```
+See [Installation in the root README.md](/README.md#installation)
 
-## Usage
+## Planned Features
 
-```bash
-bash start.sh
-```
-
-## License
-
-MIT
+See [Planned Features in the root README.md](/README.md#planned-features)
