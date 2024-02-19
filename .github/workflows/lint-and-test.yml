@@ -25,6 +25,7 @@ jobs:
         with:
           node-version-file: client/.nvmrc
           cache: "npm"
+          cache-dependency-path: client/package-lock.json
       - name: Install dependencies
         run: |
           cd client
