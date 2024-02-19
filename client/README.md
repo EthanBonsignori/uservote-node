@@ -25,7 +25,7 @@ UserVote is an application that allows users to vote on a list of features they'
 1. Navigate to the deployed application
 1. TODO: Click on the upvote buttons to vote on an item
 1. TODO: Click on the "Request Feature" button to add a new Feature Request
-1. TODO: Click on the "Delete" button to delete an item from the list
+1. TODO: Click on a Feature Request and then add a comment
 
 ## Contributing
 
