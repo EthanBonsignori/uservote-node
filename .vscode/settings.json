@@ -1,8 +1,11 @@
 {
+  // The following will hide the js and map files in the editor
+  "files.exclude": {
+    "**/__pycache__": true
+  },
   "files.trimTrailingWhitespace": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit",
     "source.fixAll": "explicit"
-  },
-  "cSpell.words": ["tanstack"]
+  }
 }
