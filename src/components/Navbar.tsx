@@ -45,7 +45,7 @@ const Navbar: FC = () => {
 
   return (
     <>
-      <AppBar color="primary" position="sticky" sx={{ mb: "20px" }}>
+      <AppBar color="primary" position="sticky">
         <Toolbar>
           <IconButton
             color="inherit"
