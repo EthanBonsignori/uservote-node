@@ -5,11 +5,11 @@ on:
     branches:
       - main
       - dev
-    paths: /client/**
+    paths: client/**
   pull_request:
     branches:
       - main
-    paths: /client/**
+    paths: client/**
 
 jobs:
   lint-build-test:
