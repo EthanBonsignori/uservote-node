@@ -2,19 +2,14 @@ import { Box, LinearProgress } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { useQuery } from "@tanstack/react-query";
 import { FC } from "react";
-import { FeatureRequestGetResponse } from "../api/generated";
+import { getFeatureRequests } from "../api/api";
 import FeatureRequest from "../components/FeatureRequest";
 import Layout from "../components/Layout";
 
 const Root: FC = () => {
-  const featureRequestsQuery = (): Promise<FeatureRequestGetResponse[]> =>
-    fetch(`${import.meta.env.VITE_API_ROOT}/api/v1/feature-request`).then(
-      (res) => res.json()
-    );
-
   const { isLoading, error, data } = useQuery({
     queryKey: ["feature-requests"],
-    queryFn: featureRequestsQuery,
+    queryFn: getFeatureRequests,
   });
 
   if (isLoading)
