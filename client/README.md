@@ -2,7 +2,7 @@
 
 ## Description
 
-UserVote is an application that allows users to vote on a list of features they'd like to see added to a product or service. The application is designed to be used by a company to gather feedback from their customers and allow them to vote on what matters most to them using simple upvote and downvote buttons. UserVote is a "wide but shallow" project to demonstrate a variety of technologies and best practices. The client is built with TypeScript, React, and Material UI.
+UserVote is an application that allows users to vote on a list of features they'd like to see added to a product or service. The application is designed to be used by a company to gather feedback from their customers and allow them to vote on what matters most to them using a simple upvote button. UserVote is a "wide but shallow" project to demonstrate a variety of technologies and best practices. The client is built with TypeScript, React, React-Query, and Material UI.
 
 ## Planned Features
 
@@ -30,7 +30,3 @@ UserVote is an application that allows users to vote on a list of features they'
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
