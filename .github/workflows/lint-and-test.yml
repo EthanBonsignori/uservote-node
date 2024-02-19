@@ -12,7 +12,7 @@ on:
     paths: client/**
 
 jobs:
-  lint-build-test:
+  lint-and-test:
     name: Lint and Test
     runs-on: ubuntu-latest
 
