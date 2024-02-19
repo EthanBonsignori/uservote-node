@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: client/.nvmrc
-          cache: "client/npm"
+          cache: "npm"
       - name: Install dependencies
         run: |
           cd client
