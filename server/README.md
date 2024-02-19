@@ -1,8 +1,6 @@
-# uservote-api
+# UserVote Server
 
-## Description
-
-FastAPI based API for uservote project.
+FastAPI, Motor/MongoDB based API for UserVote.
 
 ## Requirements
 
