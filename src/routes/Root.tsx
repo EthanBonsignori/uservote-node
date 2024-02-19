@@ -1,13 +1,29 @@
+import { Box, LinearProgress } from "@mui/material";
 import Grid from "@mui/material/Grid";
+import { useQuery } from "@tanstack/react-query";
 import { FC } from "react";
 import Layout from "../components/Layout";
 
 const Root: FC = () => {
-  // const apiRoot = import.meta.env.VITE_API_ROOT;
-  // console.log("🚀 ~ apiRoot:", apiRoot);
-  // fetch(new URL(`${apiRoot}/api/v1/feature-request`))
-  //   .then((res) => res.json())
-  //   .then((data) => console.log(data));
+  const { isLoading, error, data } = useQuery({
+    queryKey: ["feature-requests"],
+    queryFn: () =>
+      fetch(`${import.meta.env.VITE_API_ROOT}/api/v1/feature-request`).then(
+        (res) => res.json()
+      ),
+  });
+
+  if (isLoading)
+    return (
+      <Layout>
+        <Box sx={{ width: "100%" }}>
+          <LinearProgress />
+        </Box>
+      </Layout>
+    );
+
+  if (error) return <Layout>Error: {error.message}</Layout>;
+
   return (
     <Layout>
       <Grid container spacing={2}>
