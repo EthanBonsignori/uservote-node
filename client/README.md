@@ -17,15 +17,15 @@ UserVote is an application that allows users to vote on a list of features they'
 ## Installation
 
 1. Clone the repository
-2. Run `npm install` to install the dependencies
-3. Run `npm start` to start the development server
+1. Run `npm install` to install the dependencies
+1. Run `npm start` to start the development server
 
 ## Usage
 
 1. Navigate to the deployed application
-2. TODO: Click on the upvote buttons to vote on an item
-3. TODO: Click on the "Add Item" button to add a new item to the list
-4. TODO: Click on the "Delete" button to delete an item from the list
+1. TODO: Click on the upvote buttons to vote on an item
+1. TODO: Click on the "Request Feature" button to add a new Feature Request
+1. TODO: Click on the "Delete" button to delete an item from the list
 
 ## Contributing
 
