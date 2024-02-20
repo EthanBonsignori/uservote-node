@@ -4,7 +4,7 @@ The client for UserVote. Built with TypeScript, React, React-Query, and Material
 
 ## Requirements
 
-Node.js 21+, recommended to use [nvm](https://github.com/nvm-sh/nvm) which will automatically use the .nvmrc file to set the correct version of Node.js.
+Node.js version 20.x, recommended to use [nvm](https://github.com/nvm-sh/nvm) which will automatically use the .nvmrc file to set the correct version of Node.js.
 
 ## Installation
 
