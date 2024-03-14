@@ -10,7 +10,7 @@ The client is built with TypeScript, React, React-Query, and Material UI and liv
 
 ## Server
 
-The server is built with Python, FastAPI, Pydantic, and Motor for MongoDB and lives at [server/](/server).
+The server is built with Node.js, Express, and PostgreSQL and lives at [server/](/server).
 
 ## [Installation](#installation)
 
