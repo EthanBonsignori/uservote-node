@@ -17,8 +17,9 @@ The server is built with Node.js, Express, and PostgreSQL and lives at [server/]
 1. Clone the repository
 1. Setup and start the server:
    1. Navigate to the server i.e. `cd server`
-   1. Run `pip install -r requirements.txt` to install the dependencies
-   1. Run `uvicorn app.main:app --reload` to start the server
+   1. Run `npm install` to install the dependencies
+   1. Run `npm run migrate` to create the database and run the migrations
+   1. Run `npm run dev` to start the server
 1. Setup the and start the client:
    1. Navigate to the client i.e. `cd client`
    1. Run `npm install` to install the dependencies

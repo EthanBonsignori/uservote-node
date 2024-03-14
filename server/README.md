@@ -1,10 +1,10 @@
 # UserVote Server
 
-FastAPI, Motor/MongoDB based API for UserVote.
+Node.js, Express, and PostgreSQL server for UserVote.
 
 ## Requirements
 
-Python 3.8+
+NVM or Node v21.6.1, PostgreSQL
 
 ## Installation
 
